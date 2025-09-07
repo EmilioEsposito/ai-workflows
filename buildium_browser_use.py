@@ -86,17 +86,18 @@ login_agent = Agent(
 
 transactions_task = """
 On the page, look for "Bank Transactions" that have "duquesne" in them (do NOT use the search bar, the bank transactions are already rendered on the page)
-and create a "Buildium entry" for each one by following these steps:
+and create a "Buildium entry" for each one (if it does not already exist) by following these steps:
 
 Creating a Buildium entry:
-1. Hover over "Add new entry" within the row
-2. Click "Check" within the same row
-3. A model will popup:
-    3.1. Type "Duquesne Light" in the "Vendor" field, and press "Enter" key
-    3.2. In Allocations table, on first row:
-        3.2.1. Type "659" in "Property" column, and press "Enter" key
+1. If "Add new entry" is not visible for that row, it is already processed, so skip to the next eligble row.
+2. Hover over "Add new entry" within the row
+3. Click "Check" within the same row
+4. A model will popup:
+    4.1. Type "Duquesne Light" in the "Vendor" field, and press "Enter" key
+    4.2. In Allocations table, on first row:
+        4.2.1. Type "659" in "Property" column, and press "Enter" key
         3.2.2. Type "Property level" in the "Unit" column, and press "Enter" key
-    3.3. Click "Save"
+    4.3. Click "Save"
 
 Move on to the next unprocessed row until all rows with "duquesne" in them are processed.
 
