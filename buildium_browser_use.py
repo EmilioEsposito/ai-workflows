@@ -92,10 +92,10 @@ Creating a Buildium entry:
 1. Hover over "Add new entry" within the row
 2. Click "Check" within the same row
 3. A model will popup:
-    3.1. Type "Duquesne Light" in the "Vendor" field, and click the first dropdown result option below it
+    3.1. Type "Duquesne Light" in the "Vendor" field, and press "Enter" key
     3.2. In Allocations table, on first row:
-        3.2.1. Type "659" in "Property" column, and click the first dropdown result below it
-        3.2.2. Type "Property level" in the "Unit" column, and click the first dropdown result below it
+        3.2.1. Type "659" in "Property" column, and press "Enter" key
+        3.2.2. Type "Property level" in the "Unit" column, and press "Enter" key
     3.3. Click "Save"
 
 Move on to the next unprocessed row until all rows with "duquesne" in them are processed.
