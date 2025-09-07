@@ -1,0 +1,7 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+This repo is part of a multi-root workspace. It is not really directly related to the portfolio repo, but it is part of the same workspace. Generally I will only work on these repos in silos, so if I reference something specific to this repo (ai-workflows), don't look to the portfolio repo for additional context unless I specifically mention it. 
