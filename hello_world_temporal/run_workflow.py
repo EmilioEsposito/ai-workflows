@@ -1,12 +1,15 @@
+from dotenv import load_dotenv
+load_dotenv()
 import asyncio
 
 from run_worker import SayHello
 from temporalio.client import Client
+import os
 
 
 async def main():
     # Create client connected to server at the given address
-    client = await Client.connect("localhost:7233")
+    client = await Client.connect(os.getenv("TEMPORAL_ADDRESS"))
 
     # Execute a workflow
     result = await client.execute_workflow(
