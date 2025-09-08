@@ -205,3 +205,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Temporal
+local_temporal_db.db
