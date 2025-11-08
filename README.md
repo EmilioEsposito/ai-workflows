@@ -1,5 +1,34 @@
 
+# AI Workflows
 
+Collection of AI-powered automation workflows.
+
+## Scripts
+
+### Buildium Bank Transaction Processor (`buildium_stagehand.py`)
+
+Automates processing of bank transactions in Buildium using BrowserBase and Stagehand:
+- Logs into Buildium with MFA/OTP support
+- Finds unmatched bank transactions (e.g., Duquesne Light payments)
+- Creates check entries with proper vendor and property allocations
+
+**Requirements:**
+```bash
+# Required environment variables
+BROWSERBASE_API_KEY=
+BROWSERBASE_PROJECT_ID=
+OPENAI_API_KEY=
+BUILDIUM_EMAIL=
+BUILDIUM_PASSWORD=
+OPEN_PHONE_API_KEY=  # for MFA/OTP
+```
+
+**Usage:**
+```bash
+uv run python buildium_stagehand.py
+```
+
+---
 
 # Local Development Setup
 
